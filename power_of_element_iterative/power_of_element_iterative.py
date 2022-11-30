@@ -1,6 +1,6 @@
 import math
 
-def power_of_element_iterative(base, exp):
+def power_of_element_iterative(base: int , exp):
     """
     An iterative function to calcualte of power an element
     """
@@ -11,6 +11,8 @@ def power_of_element_iterative(base, exp):
         result = result * result
         counter += 1
 
-    return result
+    # (base ** (exp - base ** (counter - 1)))
+    return result * (base ** (exp - 2 ** (counter - 1)))
 
-print(power_of_element_iterative(2, 16))
+print(power_of_element_iterative(11, 3))
+

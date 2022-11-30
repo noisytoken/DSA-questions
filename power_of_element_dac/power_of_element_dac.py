@@ -9,6 +9,8 @@ def power_of_element_dac(base, exp):
     A function to calcualte of an element using divide and conquer
     """
 
+    if exp == 0:
+        return 1
 
     if exp == 1:
         return base
@@ -22,10 +24,10 @@ def power_of_element_dac(base, exp):
     else:
         return combine * base
 
-print(power_of_element_dac(2, 1))
+# print(power_of_element_dac("2", "0"))
 print(power_of_element_dac(2, 5))
-print(power_of_element_dac(2, 6))
-print(power_of_element_dac(2, 7))
+# print(power_of_element_dac(2, 6))
+# print(power_of_element_dac(2, 7))
 
 # print(power_of_element_dac(2, 64))
 # print(power_of_element_dac(2, 2))
